@@ -1,0 +1,113 @@
+[
+  {
+    "Industry": "Healthcare & Biotech",
+    "Sub-categories": [
+      {
+        "Name": "Health Insurance",
+        "Description": "Private and government health insurance providers, reimbursement models, and patient coverage strategies.",
+        "Sentiments": [
+          {
+            "Type": "Positive",
+            "Mood": "Optimistic",
+            "Intensity": "Mild",
+            "Trend": "Improving",
+            "Magnitude": "Small",
+            "Time Horizon": "Short-term",
+            "Confidence": "Medium",
+            "Typical Investor Action": "Strong Buy / Increase exposure",
+            "Examples": [
+              "Improvement in insurance claim ratios",
+              "Favorable healthcare policy announcements",
+              "Successful payer–provider contract negotiations"
+            ],
+            "Explanation": "Steady financial performance and positive policy developments support a mild positive outlook for health insurance providers."
+          },
+          {
+            "Type": "Neutral",
+            "Mood": "Balanced",
+            "Intensity": "Mild",
+            "Trend": "Stable",
+            "Magnitude": "Small",
+            "Time Horizon": "Short-term",
+            "Confidence": "Medium",
+            "Typical Investor Action": "Hold / Wait for clearer signal",
+            "Examples": [
+              "Policy updates without clear financial impact",
+              "Premium adjustments with limited market reaction"
+            ],
+            "Explanation": "No significant changes in market conditions; performance is stable and predictable."
+          },
+          {
+            "Type": "Negative",
+            "Mood": "Pessimistic",
+            "Intensity": "Strong",
+            "Trend": "Deteriorating",
+            "Magnitude": "Large",
+            "Time Horizon": "Long-term",
+            "Confidence": "High",
+            "Typical Investor Action": "Sell / Reduce exposure / Hedge",
+            "Examples": [
+              "Regulatory pressure increasing claim payouts",
+              "Rising fraud or mismanagement cases",
+              "Unfavorable insurance coverage mandates"
+            ],
+            "Explanation": "Regulatory and operational risks could significantly hurt performance, leading to strong negative sentiment."
+          }
+        ]
+      },
+      {
+        "Name": "Digital Health",
+        "Description": "Health technology innovations, digital patient engagement platforms, and data-driven healthcare solutions.",
+        "Sentiments": [
+          {
+            "Type": "Positive",
+            "Mood": "Bullish",
+            "Intensity": "Strong",
+            "Trend": "Improving",
+            "Magnitude": "Large",
+            "Time Horizon": "Long-term",
+            "Confidence": "High",
+            "Typical Investor Action": "Small Buy / Tactical entry",
+            "Examples": [
+              "Strong adoption of telemedicine",
+              "AI-healthtech partnerships gaining traction",
+              "Successful product trials or regulatory approvals"
+            ],
+            "Explanation": "Rapid adoption of digital health solutions and strong innovation trends indicate a very positive long-term outlook."
+          },
+          {
+            "Type": "Neutral",
+            "Mood": "Balanced",
+            "Intensity": "Mild",
+            "Trend": "Stable",
+            "Magnitude": "Small",
+            "Time Horizon": "Short-term",
+            "Confidence": "Medium",
+            "Typical Investor Action": "Hold / Monitor adoption trends",
+            "Examples": [
+              "Slow but steady user growth",
+              "Regulatory reviews without major updates"
+            ],
+            "Explanation": "Performance and adoption trends are stable with no clear positive or negative signals in the short term."
+          },
+          {
+            "Type": "Negative",
+            "Mood": "Pessimistic",
+            "Intensity": "Strong",
+            "Trend": "Deteriorating",
+            "Magnitude": "Large",
+            "Time Horizon": "Long-term",
+            "Confidence": "High",
+            "Typical Investor Action": "Sell / Reduce exposure / Hedge",
+            "Examples": [
+              "Cybersecurity breaches in digital health apps",
+              "Low adoption of digital platforms",
+              "Regulatory rejection of healthtech products"
+            ],
+            "Explanation": "Significant risks such as cybersecurity threats or regulatory setbacks can severely impact digital health investments."
+          }
+        ]
+      }
+    ]
+  }
+]
