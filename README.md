@@ -1,20 +1,34 @@
 # Orcalytics AI Experiments
 
-Research experiments that turn business news into industry classifications,
-industry-specific events, emotions, and sentiment. The experiments from `master`
-and `yusra` are consolidated here on `main` as reusable Python code and five short
-notebook walkthroughs.
+Orcalytics explores how business news can be transformed into structured market
+intelligence. The project combines a cloud data analysis workflow with LLM
+experiments for industry classification, event extraction, emotion detection, and
+industry-specific sentiment analysis.
 
-This repository is the analytics experiment layer. The existing news acquisition,
-Google Cloud Storage, BigQuery, and Looker Studio workflow is described in
-[Architecture](docs/architecture.md). Cloud ingestion/deployment code is not yet
-included here.
+The implementation includes reusable Python modules, a command-line interface,
+five notebook walkthroughs, and explicit taxonomy and output schemas.
+
+## Interactive dashboard
+
+**[Explore the News Data Analysis dashboard →](https://datastudio.google.com/s/sDBUvI4UIhk)**
+
+The dashboard explores the imported news dataset through article coverage and text
+completeness, publisher activity, sentiment, concepts, relevance, duplicate content,
+and source rankings.
+
+The data workflow uses **NewsAPI.ai / Event Registry → Google Cloud Storage →
+BigQuery → Looker Studio**. The dashboard presents exploratory analysis of the
+acquired news data; the Python experiments in this repository develop the
+article-level analytics layer.
+
+See the [architecture diagram](docs/architecture.md) for the data flow and the
+planned connection between the cloud dataset and the analytics experiments.
 
 ## Start here
 
 | Goal | Entry point |
 | --- | --- |
-| Understand every original branch and migration decision | [Branch analysis](docs/branch-analysis.md) |
+| Explore the news dataset interactively | [News Data Analysis dashboard](https://datastudio.google.com/s/sDBUvI4UIhk) |
 | Understand the data pipeline and dashboard | [Architecture and data flow](docs/architecture.md), [dashboard review](docs/dashboard-review.md) |
 | Run industry classification with explicit retrieval | [Notebook 01](notebooks/01_industry_vector.ipynb) |
 | Compare model-directed file search | [Notebook 02](notebooks/02_industry_file_search.ipynb) |
@@ -31,7 +45,7 @@ ai-experiments/
 ├── data/
 │   ├── taxonomies/                   # Industry, event, and healthcare affect definitions
 │   ├── samples/                      # Two general articles and six event/input pairs
-│   └── provenance.json               # Original branch, file, and commit attribution
+│   └── provenance.json               # Sample and taxonomy provenance
 ├── notebooks/                        # Five readable experiment walkthroughs
 ├── src/orcalytics_experiments/
 │   ├── config.py                     # Environment and client setup
@@ -42,7 +56,7 @@ ai-experiments/
 │   └── resources/
 │       ├── prompts/                  # One system prompt per task
 │       └── schemas/                  # Versioned JSON output contracts
-├── docs/                             # Branch analysis, architecture, dashboard findings
+├── docs/                             # Architecture and dashboard documentation
 ├── tests/                            # Offline checks with fake API responses
 └── .github/workflows/checks.yml       # Lint, offline tests, and package build
 ```
@@ -60,11 +74,11 @@ cp .env.example .env
 ```
 
 Set `OPENAI_API_KEY` in `.env`. Set `OPENAI_MODEL` only if you want to override
-the original experiment defaults: `gpt-5.1` for explicit industry retrieval and
+the experiment defaults: `gpt-5.1` for explicit industry retrieval and
 `gpt-5-mini` for the other experiments. The `--model` argument takes precedence.
 Model access depends on your OpenAI project. Prompts request consistent choices,
 but model outputs are not guaranteed to be identical across repeated calls.
-The original `gpt-5-mini` industry file-search and event experiments retain high
+The `gpt-5-mini` industry file-search and event experiments use high
 reasoning effort. Other models use their API default reasoning setting.
 
 ### Prepare taxonomy stores once
@@ -87,9 +101,8 @@ Copy each manifest's `vector_store_id` into `INDUSTRY_VECTOR_STORE_ID` or
 with identifying metadata. Classification retrieves whole local taxonomy records
 using that metadata, so it does not assume a search chunk is valid JSON.
 
-Old notebook store IDs are intentionally not reused: they belong to a particular
-account and do not contain the metadata expected by this refactor. Keep the store
-and local taxonomy in sync; prepare a new store when the taxonomy changes. Setup
+Store IDs are specific to your OpenAI project. Keep the store and local taxonomy
+in sync; prepare a new store when the taxonomy changes. Setup
 does not delete resources. On failure it reports the partially created store ID
 for inspection; rerunning setup creates another store.
 
@@ -145,19 +158,19 @@ orcalytics classify --task sentiment \
 ```
 
 The supplied healthcare taxonomies cover only **Health Insurance** and **Digital
-Health**. The sample shortlist is generated from those legacy taxonomy names for
+Health**. The sample shortlist is generated from those taxonomy names for
 the walkthrough; it is not a reviewed label set.
 Unsupported industry pairs are listed in `unsupported_industries`; they are not
 invented. Empty supported input produces an empty result without a model call.
 
-Omit `--industries` to use the original vector-retrieval approach: the industry
+Omit `--industries` to use the vector-retrieval approach: the industry
 store supplies candidate pairs, which are joined to the local healthcare taxonomy.
 This option requires `INDUSTRY_VECTOR_STORE_ID` and can miss relevant pairs outside
 the retrieval result limit. Emotion/sentiment do not support `file-search` mode.
 
 Emotion labels are read from the taxonomy. Their intensity/direction/confidence
 fields retain the taxonomy's descriptive rubrics. Sentiment selects one definition
-per pair and copies its descriptors, including the original string-valued
+per pair and copies its descriptors, including the string-valued
 `Typical Investor Action`; that field is a research taxonomy label. Neither taxonomy
 provides an independently measured investor mood or investment recommendation.
 
@@ -192,18 +205,6 @@ Passing these checks validates the code paths and data contracts; live model
 quality, extraction accuracy, and cloud integration still need separate evaluation.
 No labeled benchmark is included. The copied article samples have incomplete source
 and collection provenance; see `data/provenance.json` before treating them as a dataset.
-
-## Branches and contribution workflow
-
-The detailed [branch analysis](docs/branch-analysis.md) records original commit IDs,
-every experiment's role, known issues, and the old-to-new file mapping. Original
-`master`, `yusra`, and `marwa` histories remain available. Changes in this
-consolidation are committed to `main` only.
-
-For future experiments, create a feature branch from `main`, reuse the shared
-package, keep taxonomies and samples outside notebooks, and add a short notebook
-or test only where it exercises a distinct behavior. Add new setup/usage guidance
-to this README rather than creating competing setup guides.
 
 API implementation references: [OpenAI retrieval](https://developers.openai.com/api/docs/guides/retrieval),
 [structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs).
