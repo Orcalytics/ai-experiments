@@ -1,0 +1,11 @@
+{
+  "shortlisted_industries": [
+    {
+      "sector": "Real Estate & Construction",
+      "sub_category": "Commercial Real Estate",
+      "relevance": "HIGH",
+      "reason": "The article focuses on Toll Brothers, a home builder and its performance within the building-products/home builders industry, making Real Estate & Construction central to the piece. Retrieved from vector store."
+    }
+  ],
+  "emergent_industry_candidate": null
+}

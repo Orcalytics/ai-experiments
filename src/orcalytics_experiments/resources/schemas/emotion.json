@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "properties": {
+    "shortlisted_emotions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "industry": {
+            "type": "string"
+          },
+          "sub_category": {
+            "type": "string"
+          },
+          "emotion_label": {
+            "type": "string"
+          },
+          "intensity": {
+            "type": "string"
+          },
+          "direction": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string"
+          },
+          "relevance": {
+            "type": "string",
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "industry",
+          "sub_category",
+          "emotion_label",
+          "intensity",
+          "direction",
+          "confidence",
+          "relevance",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "emergent_emotion_candidate": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "shortlisted_emotions",
+    "emergent_emotion_candidate"
+  ],
+  "additionalProperties": false
+}

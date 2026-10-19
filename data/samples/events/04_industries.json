@@ -1,0 +1,11 @@
+{
+  "shortlisted_industries": [
+    {
+      "sector": "Aerospace & Defense",
+      "sub_category": "MRO (Maintenance, Repair & Overhaul)",
+      "relevance": "HIGH",
+      "reason": "Article describes AeroCore's engine cleaning and Total Engine Health solutions for airlines and defense operators and the opening of an international service site at GRU — core MRO activity. Retrieved from vector store."
+    }
+  ],
+  "emergent_industry_candidate": null
+}

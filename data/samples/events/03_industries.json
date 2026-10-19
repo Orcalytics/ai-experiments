@@ -1,0 +1,11 @@
+{
+  "shortlisted_industries": [
+    {
+      "sector": "Consumer Goods & Retail",
+      "sub_category": "Food & Beverage",
+      "relevance": "HIGH",
+      "reason": "Article centres on Sun Holdings' acquisition of Bar Louie and expansion of its casual dining/restaurant portfolio, franchising and operations. Retrieved from vector store."
+    }
+  ],
+  "emergent_industry_candidate": null
+}

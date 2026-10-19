@@ -1,0 +1,129 @@
+{
+  "taxonomy_name": "Event Types",
+  "version": "1.0",
+  "categories": {
+    "Earnings": {
+      "description": "Announcements or releases of quarterly or annual financial results, including revenue, profit, or loss, and earnings guidance.",
+      "keywords": [
+        "earnings",
+        "quarterly results",
+        "annual results",
+        "revenue",
+        "profit",
+        "loss",
+        "guidance"
+      ]
+    },
+    "M&A": {
+      "description": "Corporate transactions including mergers, acquisitions, divestitures, buyouts, or joint ventures.",
+      "keywords": [
+        "merger",
+        "acquisition",
+        "divestiture",
+        "buyout",
+        "joint venture",
+        "takeover"
+      ]
+    },
+    "Product Launch": {
+      "description": "Introduction or release of new products, services, platforms, or features or technologies.",
+      "keywords": [
+        "product launch",
+        "new product",
+        "released",
+        "introduced",
+        "rolled out",
+        "unveiled"
+      ]
+    },
+    "Strategic Partnerships": {
+      "description": "Collaborations or alliances between companies for technology, distribution, co-development, or market access.",
+      "keywords": [
+        "strategic partnership",
+        "collaboration",
+        "alliance",
+        "co-development",
+        "joint initiative"
+      ]
+    },
+    "Regulatory / Legal": {
+      "description": "Regulatory approvals, government investigations, fines, legal rulings, or compliance-related events.",
+      "keywords": [
+        "regulation",
+        "approved",
+        "investigation",
+        "lawsuit",
+        "fine",
+        "compliance",
+        "ruling"
+      ]
+    },
+    "Workforce Changes": {
+      "description": "Employee-related events including layoffs, hiring, furloughs, or other workforce restructuring.",
+      "keywords": [
+        "layoffs",
+        "hiring",
+        "furlough",
+        "job cuts",
+        "workforce reduction",
+        "restructuring"
+      ]
+    },
+    "Leadership Changes": {
+      "description": "Appointments, resignations, or departures of executive leadership or board members.",
+      "keywords": [
+        "CEO change",
+        "CFO change",
+        "executive appointment",
+        "board member",
+        "resignation",
+        "departure"
+      ]
+    },
+    "Supply Chain / Operations": {
+      "description": "Operational or supply chain-related events such as plant openings, shutdowns, disruptions, or production changes.",
+      "keywords": [
+        "supply chain",
+        "operations",
+        "plant opening",
+        "plant shutdown",
+        "production change",
+        "operational disruption"
+      ]
+    },
+    "Restructuring": {
+      "description": "Corporate restructuring, cost-cutting measures, or organizational realignment initiatives.",
+      "keywords": [
+        "restructuring",
+        "cost-cutting",
+        "reorganization",
+        "downsizing",
+        "corporate restructure"
+      ]
+    },
+    "Funding": {
+      "description": "Capital raising events including venture funding, private equity, debt issuance, or IPOs.",
+      "keywords": [
+        "funding",
+        "venture capital",
+        "equity raise",
+        "debt issuance",
+        "IPO",
+        "Series A",
+        "Series B",
+        "Series C"
+      ]
+    },
+    "ESG": {
+      "description": "Environmental, social, or governance initiatives, sustainability efforts, or related corporate announcements.",
+      "keywords": [
+        "ESG",
+        "sustainability",
+        "environmental",
+        "social responsibility",
+        "governance",
+        "carbon neutrality"
+      ]
+    }
+  }
+}

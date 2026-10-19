@@ -1,0 +1,145 @@
+{
+  "type": "object",
+  "properties": {
+    "shortlisted_industries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sector": {
+            "type": "string"
+          },
+          "sub_category": {
+            "type": "string"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "event_type": {
+                  "type": "string"
+                },
+                "event_sentiment": {
+                  "type": "string",
+                  "enum": [
+                    "Positive",
+                    "Negative",
+                    "Mixed",
+                    "Neutral"
+                  ]
+                },
+                "event_significance": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "market_reaction_likelihood": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "confidence": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "evidence": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "event_type",
+                "event_sentiment",
+                "event_significance",
+                "market_reaction_likelihood",
+                "confidence",
+                "evidence"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 1
+          },
+          "event_frequency": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          }
+        },
+        "required": [
+          "sector",
+          "sub_category",
+          "events",
+          "event_frequency"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "emergent_industry_candidate": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "event_sentiment": {
+              "type": "string",
+              "enum": [
+                "Positive",
+                "Negative",
+                "Mixed",
+                "Neutral"
+              ]
+            },
+            "event_significance": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "market_reaction_likelihood": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "evidence": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "label",
+            "rationale",
+            "event_type",
+            "event_sentiment",
+            "event_significance",
+            "market_reaction_likelihood",
+            "confidence",
+            "evidence"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "shortlisted_industries",
+    "emergent_industry_candidate"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,11 @@
+{
+  "shortlisted_industries": [
+    {
+      "sector": "Consumer Goods & Retail",
+      "sub_category": "E-commerce",
+      "relevance": "LOW",
+      "reason": "American Eagle Outfitters, a retailer explicitly mentioned as paying a dividend, links the article to the consumer retail sector. Retrieved from vector store."
+    }
+  ],
+  "emergent_industry_candidate": null
+}

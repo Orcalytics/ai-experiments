@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "properties": {
+    "shortlisted_industries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sector": {
+            "type": "string"
+          },
+          "sub_category": {
+            "type": "string"
+          },
+          "relevance": {
+            "type": "string",
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 220
+          }
+        },
+        "required": [
+          "sector",
+          "sub_category",
+          "relevance",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "emergent_industry_candidate": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "label",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "shortlisted_industries",
+    "emergent_industry_candidate"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,17 @@
+{
+  "shortlisted_industries": [
+    {
+      "sector": "Healthcare & Biotech",
+      "sub_category": "Health Insurance",
+      "relevance": "LOW",
+      "reason": "Legacy HCA demonstration input; not a reviewed classification."
+    },
+    {
+      "sector": "Healthcare & Biotech",
+      "sub_category": "Digital Health",
+      "relevance": "LOW",
+      "reason": "Legacy HCA demonstration input; not a reviewed classification."
+    }
+  ],
+  "emergent_industry_candidate": null
+}

@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "properties": {
+    "shortlisted_sentiments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "industry": {
+            "type": "string"
+          },
+          "sub_category": {
+            "type": "string"
+          },
+          "Sentiments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Type": {
+                  "type": "string",
+                  "enum": [
+                    "Positive",
+                    "Neutral",
+                    "Negative"
+                  ]
+                },
+                "Mood": {
+                  "type": "string"
+                },
+                "Intensity": {
+                  "type": "string"
+                },
+                "Trend": {
+                  "type": "string"
+                },
+                "Magnitude": {
+                  "type": "string"
+                },
+                "Time Horizon": {
+                  "type": "string"
+                },
+                "Confidence": {
+                  "type": "string"
+                },
+                "Typical Investor Action": {
+                  "type": "string"
+                },
+                "Explanation": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Type",
+                "Mood",
+                "Intensity",
+                "Trend",
+                "Magnitude",
+                "Time Horizon",
+                "Confidence",
+                "Typical Investor Action",
+                "Explanation"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1,
+            "maxItems": 1
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "industry",
+          "sub_category",
+          "Sentiments",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "shortlisted_sentiments"
+  ],
+  "additionalProperties": false
+}

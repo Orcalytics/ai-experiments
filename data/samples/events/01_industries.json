@@ -1,0 +1,23 @@
+{
+  "shortlisted_industries": [
+    {
+      "sector": "Sports, Fitness & Wellness",
+      "sub_category": "Sports Tech",
+      "relevance": "HIGH",
+      "reason": "Central focus on a performance-oriented smartwatch launch for athletes as part of a sports collaboration."
+    },
+    {
+      "sector": "Sports, Fitness & Wellness",
+      "sub_category": "Connected Fitness",
+      "relevance": "MEDIUM",
+      "reason": "Smartwatch features proprietary OS and app-based training metrics, highlighting connected training use cases."
+    },
+    {
+      "sector": "Materials & Mining",
+      "sub_category": "Specialty Materials",
+      "relevance": "LOW",
+      "reason": "Product details emphasize advanced materials like DLC-coated titanium, carbon-fiber plate, PEBA midsole, and sapphire caseback."
+    }
+  ],
+  "emergent_industry_candidate": null
+}

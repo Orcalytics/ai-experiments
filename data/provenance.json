@@ -1,0 +1,56 @@
+[
+  {
+    "branch": "master",
+    "commit": "289ebe79b18b0125ede624a3be1abed5bb992b03",
+    "source": "industrial_taxonomy.json",
+    "destination": "data/taxonomies/industries.json",
+    "change": "JSON formatting and filename only; taxonomy values preserved."
+  },
+  {
+    "branch": "master",
+    "commit": "289ebe79b18b0125ede624a3be1abed5bb992b03",
+    "source": "eventss.json",
+    "destination": "data/taxonomies/events.json",
+    "change": "JSON formatting and filename only; taxonomy values preserved."
+  },
+  {
+    "branch": "yusra",
+    "commit": "672e50e119ae5f9b52d569eebdee7def28eccf3c",
+    "source": "rebuild emotion taxanomy article 1.txt",
+    "destination": "data/taxonomies/emotions_healthcare.json",
+    "change": "JSON formatting and filename only; taxonomy values preserved."
+  },
+  {
+    "branch": "yusra",
+    "commit": "672e50e119ae5f9b52d569eebdee7def28eccf3c",
+    "source": "article1 emotion taxanomy - Copy.json",
+    "destination": "data/taxonomies/sentiments_healthcare.json",
+    "change": "JSON formatting and filename only; taxonomy values preserved."
+  },
+  {
+    "branch": "master",
+    "source": "classify_industries.ipynb / article_text",
+    "destination": "data/samples/hca_healthcare.txt",
+    "commit": "289ebe79b18b0125ede624a3be1abed5bb992b03"
+  },
+  {
+    "branch": "master",
+    "source": "classify_industry.ipynb / article_text",
+    "destination": "data/samples/market_roundup.txt",
+    "commit": "289ebe79b18b0125ede624a3be1abed5bb992b03"
+  },
+  {
+    "branch": "master",
+    "source": "event_classification.ipynb / article_text1..6 and industry_object1..6 (5 uses industry_object_5)",
+    "destination": "data/samples/events/",
+    "change": "Literal fixture extraction; these are experimental inputs, not ground truth.",
+    "commit": "289ebe79b18b0125ede624a3be1abed5bb992b03"
+  },
+  {
+    "branch": "yusra",
+    "commit": "672e50e119ae5f9b52d569eebdee7def28eccf3c",
+    "source": "rebuild emotion taxanomy article 1.txt / industry and subcategory names",
+    "destination": "data/samples/hca_industries.json",
+    "change": "Generated illustrative shortlist from taxonomy names for downstream walkthroughs; LOW/reason are placeholders, not original or reviewed model classifications."
+  }
+]

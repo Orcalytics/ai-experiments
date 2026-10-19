@@ -1,0 +1,115 @@
+[
+  {
+    "Industry": "Healthcare & Biotech",
+    "Sub-categories": [
+      {
+        "Name": "Health Insurance",
+        "Description": "Coverage and risk management products offered to individuals and organizations, including negotiations with private insurers and government payers.",
+        "Emotions": [
+          {
+            "Name": "Optimism",
+            "Intensity": "Mild = positive outlook on HCA's partnerships and revenue potential / Strong = high confidence in growth and influence in insurance negotiations",
+            "Direction": "Forward-looking",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Concern",
+            "Intensity": "Mild = cautious about regulatory, market, or negotiation risks / Strong = significant worry about policy changes or payer pushback",
+            "Direction": "Forward-looking / Reactive",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Surprise",
+            "Intensity": "Mild = unexpected partnership announcements or policy developments / Strong = major surprise from new payer agreements or regulatory decisions",
+            "Direction": "Reactive",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Criticism",
+            "Intensity": "Mild = subtle critique of insurance practices / Strong = strong evaluation of HCA's negotiation outcomes or payer strategy",
+            "Direction": "Reactive / Forward-looking",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Relief",
+            "Intensity": "Mild = easing concern after successful negotiations / Strong = significant release of tension when agreements are finalized",
+            "Direction": "Reactive",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Neutral",
+            "Intensity": "Mild = factual reporting of contracts and relationships / Strong = fully objective coverage without emotional framing",
+            "Direction": "Forward-looking / Reactive",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Encouragement",
+            "Intensity": "Mild = supportive tone highlighting positive payer relationships / Strong = strong encouragement for strategic partnerships or patient-focused initiatives",
+            "Direction": "Forward-looking",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Curiosity",
+            "Intensity": "Mild = interest in details of contracts or negotiation strategy / Strong = investigative exploration of payer dynamics and HCA’s competitive advantages",
+            "Direction": "Reactive / Forward-looking",
+            "Confidence": "High / Low"
+          }
+        ]
+      },
+      {
+        "Name": "Digital Health",
+        "Description": "Technology-driven healthcare initiatives, including telemedicine, digital patient engagement, and health IT investments.",
+        "Emotions": [
+          {
+            "Name": "Optimism",
+            "Intensity": "Mild = positive outlook on technology adoption and patient engagement / Strong = high confidence in growth and innovation impact",
+            "Direction": "Forward-looking",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Concern",
+            "Intensity": "Mild = cautious about tech implementation risks / Strong = significant worry about cybersecurity, adoption challenges, or ROI",
+            "Direction": "Forward-looking / Reactive",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Surprise",
+            "Intensity": "Mild = unexpected tech breakthroughs / Strong = major surprises from new innovations, patents, or partnerships",
+            "Direction": "Reactive",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Criticism",
+            "Intensity": "Mild = subtle critique of tech adoption / Strong = strong evaluation of investments, ROI, or operational execution",
+            "Direction": "Reactive / Forward-looking",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Relief",
+            "Intensity": "Mild = easing concern after successful tech implementation / Strong = release of tension following positive adoption metrics",
+            "Direction": "Reactive",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Neutral",
+            "Intensity": "Mild = factual reporting on digital health initiatives / Strong = fully objective coverage without emotional framing",
+            "Direction": "Forward-looking / Reactive",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Encouragement",
+            "Intensity": "Mild = supportive language about innovation and tech adoption / Strong = strong motivation for further investment and patient engagement initiatives",
+            "Direction": "Forward-looking",
+            "Confidence": "High / Low"
+          },
+          {
+            "Name": "Curiosity",
+            "Intensity": "Mild = interest in digital health strategies or tech choices / Strong = investigative exploration of platforms, outcomes, and adoption metrics",
+            "Direction": "Reactive / Forward-looking",
+            "Confidence": "High / Low"
+          }
+        ]
+      }
+    ]
+  }
+]

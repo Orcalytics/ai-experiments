@@ -1,0 +1,11 @@
+{
+  "shortlisted_industries": [
+    {
+      "sector": "Technology & Software",
+      "sub_category": "Semiconductors (Hardware)",
+      "relevance": "MEDIUM",
+      "reason": "Article emphasizes AI-driven market moves and highlights chipmaker Nvidia’s gains, making semiconductor hardware a substantive thread impacting markets. Retrieved from vector store."
+    }
+  ],
+  "emergent_industry_candidate": null
+}
